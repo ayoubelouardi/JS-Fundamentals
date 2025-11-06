@@ -2,21 +2,20 @@ let phrase = "C is fun";
 let i = 0;
 
 const argc = process.argv.length;
+const argv = Number(process.argv[2]);
 
-if (argc < 1)
+
+if (!(isNaN(argv)))
 {
-    console.log("");
-}
-else if (argc == 1)
-{
-    console.log("Missing number of occurrences");
+    if (argv > 0)
+    {
+        for (i = 0; i < argv; i++)
+        {
+            console.log("C is fun");
+        }
+    }
 }
 else
 {
-    const input = Number(process.argv[2]);
-
-    for (i = 0; i < input; i++)
-    {
-        console.log(phrase);
-    }
+    console.log("Missing number of occurrences");
 }
