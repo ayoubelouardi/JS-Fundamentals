@@ -1,7 +1,6 @@
 let phrase = "C is fun";
 let i = 0;
 
-const argc = process.argv.length;
 const argv = Number(process.argv[2]);
 
 
